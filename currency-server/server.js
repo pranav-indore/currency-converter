@@ -5,7 +5,7 @@ const axios = require('axios');
 const cors = require('cors'); // Import cors module
 
 const app = express();
-const port = 3001; // Change to your desired port
+const port = 3002; // Change to your desired port
 
 // Use cors middleware
 app.use(cors());
