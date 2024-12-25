@@ -16,7 +16,7 @@ app.get('/api/currencyInfo/:currency', async (req, res) => {
 
   try {
     // Fetch currency data from the specified URL
-    const response = await axios.get(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`);
+    const response = await axios.get(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`);
     const currencyData = response.data[currency];
 
     res.json(currencyData);
